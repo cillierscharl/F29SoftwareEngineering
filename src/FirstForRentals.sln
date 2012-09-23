@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstForRentals", "FirstForRentals.Web\FirstForRentals.csproj", "{DD449786-12E0-4BFA-B5D1-3AE20B72C022}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "FirstForRentals.Azure", "FirstForRentals.Azure\FirstForRentals.Azure.ccproj", "{0EEB35B8-3F62-40F7-818D-693F1BACDCD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD449786-12E0-4BFA-B5D1-3AE20B72C022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD449786-12E0-4BFA-B5D1-3AE20B72C022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD449786-12E0-4BFA-B5D1-3AE20B72C022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD449786-12E0-4BFA-B5D1-3AE20B72C022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EEB35B8-3F62-40F7-818D-693F1BACDCD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEB35B8-3F62-40F7-818D-693F1BACDCD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEB35B8-3F62-40F7-818D-693F1BACDCD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEB35B8-3F62-40F7-818D-693F1BACDCD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

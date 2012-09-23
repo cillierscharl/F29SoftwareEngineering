@@ -1,0 +1,329 @@
+<<<<<<< HEAD
+﻿.contentWrapper {
+    width: 1024px;
+    height: 100%;
+    margin:0 auto;
+}
+.optionsWrapper {
+    width: 49%;
+    height: 80%;
+    float:left;
+    position:relative;
+    border-right:2px solid gray;
+}
+.choiceWrapper {
+    width: 50%;
+    height: 80%;
+    float:left;
+    position:relative;
+}
+
+.optionContainer {
+    position:relative;
+    z-index:1;
+    width:100%;
+    height:60px;
+    margin-bottom:50px;
+}
+
+.optionCostContainer {
+    position:relative;
+    z-index:1;
+    width:90%;
+    height:50px;
+    margin-bottom:20px;
+    background-color:#9ac3e7;
+    box-shadow: 0 0 5px #888;
+}
+
+    .optionContainer:hover {
+        cursor: pointer;
+    }
+
+.selectedOption {
+    color: #2c98eb !important;
+}    
+
+.optionHeading {
+    font-size: x-large;
+    color: black;
+    font-weight:bold;
+    margin-left:5px;
+}
+.optionCostHeading {
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left:5px;
+}
+.optionCost {
+    font-size: x-large;
+    color: black;
+    font-weight:bold;
+    float:right;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right:5px;
+}
+
+.optionDescription {
+    font-size: small;
+    color: gray;
+    margin-left:15px;
+}
+
+.optionSelector {
+    z-index:0;
+    width:90%;
+    height:50px;
+    position: absolute;
+    border: 1px solid gray;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 5px #888;
+}
+
+.submitButton {
+    float:right;
+    margin-right:10%;
+}
+
+
+/* Choice Divs */
+
+.choiceContainer {
+    padding-left: 20px;
+    box-sizing: border-box;
+    display:none;
+}
+
+.modelContainer {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    height: 60px;
+    margin-bottom: 50px;
+    text-align:center;
+}
+
+    .modelContainer:hover {
+        cursor: pointer;
+    }
+
+.modelLogo {
+    height: 50px;
+    float: left;
+    margin-left:5px;
+}
+
+.modelTitle {
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+    display:inline-block;
+    margin-top:10px;
+}
+
+.availabilityLogo {
+    float: right;
+    height: 35px;
+    margin-top:10px;
+}
+
+.modelSelector {
+    z-index: 0;
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    border: 1px solid gray;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 5px #888;
+}
+.selectedModel {
+    color: #2c98eb !important;
+}
+
+.extrasContainer {
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.extraCheckbox {
+    float: left;
+    height: 30px;
+}
+
+.extraTitle {
+    font-size: x-large;
+}
+
+    .extraTitle:hover {
+        cursor: pointer;
+    }
+
+=======
+﻿.contentWrapper {
+    width: 1024px;
+    height: 100%;
+    margin:0 auto;
+}
+.optionsWrapper {
+    width: 49%;
+    height: 80%;
+    float:left;
+    position:relative;
+    border-right:2px solid gray;
+}
+.choiceWrapper {
+    width: 50%;
+    height: 80%;
+    float:left;
+    position:relative;
+}
+
+.optionContainer {
+    position:relative;
+    z-index:1;
+    width:100%;
+    height:60px;
+    margin-bottom:50px;
+}
+
+.optionCostContainer {
+    position:relative;
+    z-index:1;
+    width:90%;
+    height:50px;
+    margin-bottom:20px;
+    background-color:#9ac3e7;
+    box-shadow: 0 0 5px #888;
+}
+
+    .optionContainer:hover {
+        cursor: pointer;
+    }
+
+.selectedOption {
+    color: #2c98eb !important;
+}    
+
+.optionHeading {
+    font-size: x-large;
+    color: black;
+    font-weight:bold;
+    margin-left:5px;
+}
+.optionCostHeading {
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left:5px;
+}
+.optionCost {
+    font-size: x-large;
+    color: black;
+    font-weight:bold;
+    float:right;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right:5px;
+}
+
+.optionDescription {
+    font-size: small;
+    color: gray;
+    margin-left:15px;
+}
+
+.optionSelector {
+    z-index:0;
+    width:90%;
+    height:50px;
+    position: absolute;
+    border: 1px solid gray;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 5px #888;
+}
+
+.submitButton {
+    float:right;
+    margin-right:10%;
+}
+
+
+/* Choice Divs */
+
+.choiceContainer {
+    padding-left: 20px;
+    box-sizing: border-box;
+    display:none;
+}
+
+.modelContainer {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    height: 60px;
+    margin-bottom: 50px;
+    text-align:center;
+}
+
+    .modelContainer:hover {
+        cursor: pointer;
+    }
+
+.modelLogo {
+    height: 50px;
+    float: left;
+    margin-left:5px;
+}
+
+.modelTitle {
+    font-size: x-large;
+    color: black;
+    font-weight: bold;
+    display:inline-block;
+    margin-top:10px;
+}
+
+.availabilityLogo {
+    float: right;
+    height: 35px;
+    margin-top:10px;
+}
+
+.modelSelector {
+    z-index: 0;
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    border: 1px solid gray;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 5px #888;
+}
+.selectedModel {
+    color: #2c98eb !important;
+}
+
+.extrasContainer {
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.extraCheckbox {
+    float: left;
+    height: 30px;
+}
+
+.extraTitle {
+    font-size: x-large;
+}
+
+    .extraTitle:hover {
+        cursor: pointer;
+    }
+
+>>>>>>> origin/master

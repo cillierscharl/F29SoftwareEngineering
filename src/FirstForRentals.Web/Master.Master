@@ -1,0 +1,85 @@
+<<<<<<< HEAD:src/FirstForRentals.Web/Master.Master
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="FirstForRentals.Web.Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>First For Rentals</title>
+
+    <script type="text/javascript" src="JS/Lib/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="JS/Pages/default.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Gudea" rel="stylesheet" type="text/css" />
+    <link href="CSS/Default.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/masterpage.css" rel="stylesheet" type="text/css" />
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <img src="Images/Masterpage/bg.png" alt="" style="position:absolute; position: absolute; right: -20%; top: -20%; z-index:-1;" />
+    <div class="topDiv">
+        <span class="logo">first for rentals</span>
+        <div class="userHolder">
+            <img class="userAvatar" alt="" src="http://www.gravatar.com/avatar/a9a2927438ad1336b493b9f4754383a0?s=128&d=identicon&r=PG" />
+            <a href="#" class="userText link">charl c.</a>
+            <a href="#" class="userTextOptions link">Settings</a>
+            <a href="#" class="userTextOptions link">Logout</a>
+        </div>
+    </div>
+    <div class="topMasterPageDiv">
+        <a href="#" class="breadcrumb link">commercial.</a><a href="#" class="breadcrumb link">industrial.</a><a href="#" class="breadcrumb link">leasure.</a><a href="./application.aspx" class="breadcrumb link">executive.</a><a href="#" class="breadcrumb activeBreadCrumb link">home.</a>
+    </div>
+    <div class="wrapper">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+  
+    </div>
+</body>
+</html>
+=======
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="FirstForRentals.Web.Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>First For Rentals</title>
+
+    <script type="text/javascript" src="JS/Lib/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="JS/Pages/default.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Gudea" rel="stylesheet" type="text/css" />
+    <link href="CSS/Default.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/masterpage.css" rel="stylesheet" type="text/css" />
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <img src="Images/Masterpage/bg.png" alt="" style="position:absolute; position: absolute; right: -20%; top: -20%; z-index:-1;" />
+    <div class="topDiv">
+        <span class="logo">first for rentals</span>
+        <div class="userHolder">
+            <img class="userAvatar" alt="" src="http://www.gravatar.com/avatar/a9a2927438ad1336b493b9f4754383a0?s=128&d=identicon&r=PG" />
+            <a href="#" class="userText link">charl c.</a>
+            <a href="#" class="userTextOptions link">Settings</a>
+            <a href="#" class="userTextOptions link">Logout</a>
+        </div>
+    </div>
+    <div class="topMasterPageDiv">
+        <a href="#" class="breadcrumb link">commercial.</a><a href="#" class="breadcrumb link">industrial.</a><a href="#" class="breadcrumb link">leasure.</a><a href="./application.aspx" class="breadcrumb link">executive.</a><a href="#" class="breadcrumb activeBreadCrumb link">home.</a>
+    </div>
+    <div class="wrapper">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+  
+    </div>
+</body>
+</html>
+>>>>>>> origin/master:src/FirstForRentals.Web/Master.Master

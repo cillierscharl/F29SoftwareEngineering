@@ -1,0 +1,276 @@
+<<<<<<< HEAD
+﻿html {
+    margin: 0;
+    font-family: "Segoe UI Light","Segoe UI","Gudea";
+    background: gainsboro url('../Images/Masterpage/bg-main-tile.png') repeat-x 0 0;
+}
+
+body {
+    background: url(../Images/Masterpage/blurredBackground.png) no-repeat center;
+    height:900px;
+    overflow:hidden;
+}
+
+button, input, a {
+    font-size: 20px;
+    text-decoration: none;
+    color: Black;
+}
+
+.textbox {
+    background: Gray url(../Images/topfade.gif) repeat-x top;
+    border-style: none solid solid;
+    border: 1px solid #AAA;
+    padding: 4px;
+    color: #555;
+    width: 90%;
+    height: 30px;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    border-style: none solid solid;
+    border: 1px solid #AAA;
+    padding: 4px;
+    color: #555;
+    width: 90%;
+    height: 30px;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.button {
+    border: 2px solid White;
+    margin: 10px;
+    padding: 2px 24px;
+    color: White;
+    background-color: Black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    .button:hover {
+        background-color: Gray;
+    }
+
+    .button:active {
+        background-color: White;
+        color: Black;
+        border: 2px solid Black;
+    }
+
+.logo {
+    float: left;
+    font-size: xx-large;
+    margin-left: 27px;
+    display: inline-block;
+    margin-top: 40px;
+    color: #2C98EB;
+}
+
+.topDiv {
+    height: 80px;
+}
+
+.topMasterPageDiv {
+    width: 600px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.breadcrumb {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: Gray;
+}
+
+.activeBreadCrumb {
+    color: Black;
+}
+
+.link:hover {
+    color: Black;
+}
+
+.link:active {
+    color: #4ca9f9;
+}
+
+.userHolder {
+    float: right;
+    width: 180px;
+    height: 100px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.userText {
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.userTextOptions {
+    color: Gray;
+    float: left;
+    font-size: 15px;
+    margin-right: 40px;
+    margin-left: 5px;
+}
+
+.userAvatar {
+    float: right;
+    height: 70px;
+    box-shadow: 0 0 5px #888;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+
+.textBoxTitle {
+    font-size: small;
+    color: black;
+=======
+﻿html {
+    margin: 0;
+    font-family: "Segoe UI Light","Segoe UI","Gudea";
+    background: gainsboro url('../Images/Masterpage/bg-main-tile.png') repeat-x 0 0;
+}
+
+body {
+    background: url(../Images/Masterpage/blurredBackground.png) no-repeat center;
+    height:900px;
+    overflow:hidden;
+}
+
+button, input, a {
+    font-size: 20px;
+    text-decoration: none;
+    color: Black;
+}
+
+.textbox {
+    background: Gray url(../Images/topfade.gif) repeat-x top;
+    border-style: none solid solid;
+    border: 1px solid #AAA;
+    padding: 4px;
+    color: #555;
+    width: 90%;
+    height: 30px;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    border-style: none solid solid;
+    border: 1px solid #AAA;
+    padding: 4px;
+    color: #555;
+    width: 90%;
+    height: 30px;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.button {
+    border: 2px solid White;
+    margin: 10px;
+    padding: 2px 24px;
+    color: White;
+    background-color: Black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    .button:hover {
+        background-color: Gray;
+    }
+
+    .button:active {
+        background-color: White;
+        color: Black;
+        border: 2px solid Black;
+    }
+
+.logo {
+    float: left;
+    font-size: xx-large;
+    margin-left: 27px;
+    display: inline-block;
+    margin-top: 40px;
+    color: #2C98EB;
+}
+
+.topDiv {
+    height: 80px;
+}
+
+.topMasterPageDiv {
+    width: 600px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.breadcrumb {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: Gray;
+}
+
+.activeBreadCrumb {
+    color: Black;
+}
+
+.link:hover {
+    color: Black;
+}
+
+.link:active {
+    color: #4ca9f9;
+}
+
+.userHolder {
+    float: right;
+    width: 180px;
+    height: 100px;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.userText {
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.userTextOptions {
+    color: Gray;
+    float: left;
+    font-size: 15px;
+    margin-right: 40px;
+    margin-left: 5px;
+}
+
+.userAvatar {
+    float: right;
+    height: 70px;
+    box-shadow: 0 0 5px #888;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+
+.textBoxTitle {
+    font-size: small;
+    color: black;
+>>>>>>> origin/master
+}

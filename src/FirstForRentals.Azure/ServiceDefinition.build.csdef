@@ -9,7 +9,7 @@
   **********************************************************************************************
 -->
 <ServiceDefinition name="FirstForRentals.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2012-05.1.7">
-  <WebRole name="FirstForRentals" vmsize="Small">
+  <WebRole name="FirstForRentals.Web" vmsize="Small">
     <Sites>
       <Site name="Web">
         <Bindings>
@@ -23,5 +23,8 @@
     <Imports>
       <Import moduleName="Diagnostics" />
     </Imports>
+    <ConfigurationSettings>
+      <Setting name="SQLConnectionString" />
+    </ConfigurationSettings>
   </WebRole>
 </ServiceDefinition>

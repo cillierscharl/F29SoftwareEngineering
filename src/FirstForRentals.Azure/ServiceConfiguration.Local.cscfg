@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ServiceConfiguration serviceName="FirstForRentals.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*" schemaVersion="2012-05.1.7">
-  <Role name="FirstForRentals">
+  <Role name="FirstForRentals.Web">
     <Instances count="1" />
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="SQLConnectionString" value="Server=tcp:acatyijnsz.database.windows.net,1433;Database=Rentals_db;User ID=rentals_admin@acatyijnsz;Password=ProjectPassword1;Trusted_Connection=False;Encrypt=True;Connection Timeout=30" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>

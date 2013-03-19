@@ -37,20 +37,20 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FirstForRentals.Web\FirstForRentals.csproj">
-      <Name>FirstForRentals</Name>
-      <Project>{dd449786-12e0-4bfa-b5d1-3ae20b72c022}</Project>
-      <Private>True</Private>
-      <RoleType>Web</RoleType>
-      <RoleName>FirstForRentals</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Profiles" />
   </ItemGroup>
   <ItemGroup>
     <PublishProfile Include="Profiles\FirstForRentalsProduction.azurePubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FirstForRentals.Web\FirstForRentals.Web.csproj">
+      <Name>FirstForRentals.Web</Name>
+      <Project>{03ce2aab-2edc-4285-a19b-28c0c6c29ec2}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>FirstForRentals.Web</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>

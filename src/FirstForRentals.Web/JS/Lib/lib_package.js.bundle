@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle minify="true" runOnBuild="true">
+  <!--The order of the <file> elements determins the order of them when bundled.-->
+  <file>/JS/Lib/cookie.js</file>
+  <file>/JS/Lib/date.js</file>
+  <file>/JS/Lib/jquery-1.7.1.min.js</file>
+  <file>/JS/Lib/jqueryui-1.9.0.min.js</file>
+</bundle>

@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03CE2AAB-2EDC-4285-A19B-28C0C6C29EC2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FirstForRentals.Web</RootNamespace>
+    <AssemblyName>FirstForRentals.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetOpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\DotNetOpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.ApplicationBlock, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\DotNetOpenAuth.ApplicationBlock.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.7.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAzure.Storage.1.7.0.0\lib\net35-full\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.7.1\lib\net40\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net40\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net40\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_advertise.aspx" />
+    <Content Include="admin_customer.aspx" />
+    <Content Include="Application.aspx" />
+    <Content Include="Authenticate.aspx" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.UI.Combined.dll" />
+    <Content Include="bin\DotNetOpenAuth.ApplicationBlock.dll" />
+    <Content Include="bin\DotNetOpenAuth.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\FirstForRentals.Web.dll" />
+    <Content Include="bin\FirstForRentals.Web.pdb" />
+    <Content Include="bin\Microsoft.AspNet.Membership.OpenAuth.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Microsoft.WindowsAzure.Configuration.dll" />
+    <Content Include="bin\Microsoft.WindowsAzure.Diagnostics.dll" />
+    <Content Include="bin\Microsoft.WindowsAzure.StorageClient.dll" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="admin_vehicle.aspx" />
+    <Content Include="admin_statistics.aspx" />
+    <Content Include="CSS\admin_customer.css" />
+    <Content Include="CSS\admin_vehicle.css" />
+    <Content Include="CSS\admin_statistics.css" />
+    <Content Include="CSS\jqueryui-1.9.0.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Logo\john deere_logo.png" />
+    <Content Include="Images\Logo\mini_logo.png" />
+    <Content Include="Images\Resource\add.png" />
+    <Content Include="Images\Resource\back.png" />
+    <Content Include="Images\Resource\loader.gif" />
+    <Content Include="JS\Lib\cookie.js" />
+    <Content Include="JS\Lib\date.js" />
+    <Content Include="JS\Lib\lib_package.js">
+      <DependentUpon>lib_package.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="JS\Lib\lib_package.min.js">
+      <DependentUpon>lib_package.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="JS\Pages\admin_customer.js" />
+    <Content Include="CSS\application.css" />
+    <Content Include="CSS\auth.css" />
+    <Content Include="CSS\Default.css" />
+    <Content Include="CSS\masterpage.css" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\Logo\audi_logo.png" />
+    <Content Include="Images\Logo\available.png" />
+    <Content Include="Images\Logo\BMW_logo.png" />
+    <Content Include="Images\Logo\contact.png" />
+    <Content Include="Images\Logo\facebook.gif" />
+    <Content Include="Images\Logo\google.gif" />
+    <Content Include="Images\Logo\myopenid.gif" />
+    <Content Include="Images\Logo\Porsche_Logo.png" />
+    <Content Include="Images\Logo\twitter.png" />
+    <Content Include="Images\Logo\twitter_tile.png" />
+    <Content Include="Images\Logo\unavailable.png" />
+    <Content Include="Images\Logo\vw_logo.png" />
+    <Content Include="Images\Logo\Windows-Live.jpg" />
+    <Content Include="Images\Logo\yahoo.jpg" />
+    <Content Include="Images\Masterpage\bg-main-tile.png" />
+    <Content Include="Images\Masterpage\bg-main.jpg" />
+    <Content Include="Images\Masterpage\bg.png" />
+    <Content Include="Images\Masterpage\blurredBackground.png" />
+    <Content Include="Images\Masterpage\logo.png" />
+    <Content Include="Images\Resource\audi.jpg" />
+    <Content Include="Images\Resource\citi.jpeg" />
+    <Content Include="Images\Resource\lamborghini-logo.jpg" />
+    <Content Include="Images\Resource\lamborghini.jpg" />
+    <Content Include="Images\Resource\tilebackground.png" />
+    <Content Include="Images\Resource\truck.jpg" />
+    <Content Include="Images\topfade.gif" />
+    <Content Include="JS\Lib\jquery-1.7.1.min.js" />
+    <Content Include="JS\Pages\application.js" />
+    <Content Include="JS\Pages\auth.js" />
+    <Content Include="JS\Pages\admin_vehicle.js" />
+    <Content Include="JS\Pages\callbackHandler.js" />
+    <Content Include="JS\Pages\admin_statistics.js" />
+    <Content Include="JS\Pages\home.js" />
+    <Content Include="JS\Pages\masterpage.js" />
+    <Content Include="obj\Debug\FirstForRentals.Web.dll" />
+    <Content Include="obj\Debug\FirstForRentals.Web.pdb" />
+    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_advertise.aspx.cs">
+      <DependentUpon>admin_advertise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_advertise.aspx.designer.cs">
+      <DependentUpon>admin_advertise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_customer.aspx.cs">
+      <DependentUpon>admin_customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_customer.aspx.designer.cs">
+      <DependentUpon>admin_customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application.aspx.cs">
+      <DependentUpon>Application.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application.aspx.designer.cs">
+      <DependentUpon>Application.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\DataAccess.cs" />
+    <Compile Include="App_Code\Entities\User.cs" />
+    <Compile Include="App_Code\WindowsLive_Auth\WindowsLiveDetails.cs" />
+    <Compile Include="Authenticate.aspx.cs">
+      <DependentUpon>Authenticate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authenticate.aspx.designer.cs">
+      <DependentUpon>Authenticate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_vehicle.aspx.cs">
+      <DependentUpon>admin_vehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_vehicle.aspx.designer.cs">
+      <DependentUpon>admin_vehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_statistics.aspx.cs">
+      <DependentUpon>admin_statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_statistics.aspx.designer.cs">
+      <DependentUpon>admin_statistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Admin.Master.cs">
+      <DependentUpon>Master_Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Admin.Master.designer.cs">
+      <DependentUpon>Master_Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Customer.Master.cs">
+      <DependentUpon>Master_Customer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Customer.Master.designer.cs">
+      <DependentUpon>Master_Customer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Home.Master.cs">
+      <DependentUpon>Master_Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Home.Master.designer.cs">
+      <DependentUpon>Master_Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master_Home.Master" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Master_Customer.Master" />
+    <Content Include="Master_Admin.Master" />
+    <Content Include="JS\Lib\jqueryui-1.9.0.min.js" />
+    <None Include="JS\Lib\lib_package.js.bundle" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FirstForRentals.Entities\FirstForRentals.Entities.csproj">
+      <Project>{feaac2ce-89ff-44b2-81b2-0a50a6dc96bb}</Project>
+      <Name>FirstForRentals.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FirstForRentals.Utilities\FirstForRentals.Utilities.csproj">
+      <Project>{352bbfc8-83f5-4883-8c25-dfe048355aab}</Project>
+      <Name>FirstForRentals.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53418</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55617/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

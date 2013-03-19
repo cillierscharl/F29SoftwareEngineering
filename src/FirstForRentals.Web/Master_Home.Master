@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master_Home.Master.cs" Inherits="FirstForRentals.Web.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>First For Rentals</title>
+
+    <script type="text/javascript" src="/JS/Lib/jquery-1.7.1.min.js"></script>
+    <script src="/JS/Lib/jqueryui-1.9.0.min.js"></script>
+    <script src="/JS/Lib/cookie.js"></script>
+    <script src="/JS/Pages/masterpage.js"></script>
+    <link href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Gudea" rel="stylesheet" type="text/css" />
+    <link href="/CSS/Default.css" rel="stylesheet" type="text/css" />
+    <link href="/CSS/masterpage.css" rel="stylesheet" type="text/css" />
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div class="dialog dialogContainer">
+
+    </div>
+    <div class="dialog containerSection">
+        <div class="dialogContent">
+            <div class="dialogTextContainer">
+                <span class="dialogText"></span>
+            </div>
+            <div class="dialogOptionsContainer">
+                
+            </div>
+        </div>
+    </div>
+
+    <form id="form1" runat="server"></form>
+    <img src="/Images/Masterpage/bg.png" alt="" style="position:absolute; position: absolute; right: -20%; top: -20%; z-index:-1;" />
+    <div class="topDiv">
+        <a href="./Home" class="logo">first for rentals</a>
+        <img class="loading" src="/Images/Resource/loader.gif" />
+        <div class="userHolder">
+            <img class="userAvatar" alt="" src="" />
+            <a href="#" class="userText link"></a>
+            <a href="/admin/customer" class="userTextOptions link adminLink">Admin</a>
+            <a href="#" class="userTextOptions link logoutLink">Logout</a>
+        </div>
+    </div>
+    <div class="topMasterPageDiv">
+        <a href="/application/commercial" class="breadcrumb link">commercial.</a><a href="/application/industrial" class="breadcrumb link">industrial.</a><a href="/application/leasure" class="breadcrumb link">leasure.</a><a href="/application/executive" class="breadcrumb link executiveLink">executive.</a><a href="/home" class="breadcrumb link homeLink">home.</a>
+    </div>
+    <div class="wrapper">
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+  
+    </div>
+</body>
+</html>

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿html {
+html {
     margin: 0;
     font-family: "Segoe UI Light","Segoe UI","Gudea";
     background: gainsboro url('../Images/Masterpage/bg-main-tile.png') repeat-x 0 0;
@@ -12,7 +11,7 @@ body {
 }
 
 button, input, a {
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color: Black;
 }
@@ -34,10 +33,9 @@ button, input, a {
     border: 1px solid #AAA;
     padding: 4px;
     color: #555;
-    width: 90%;
+    width: 91%;
     height: 30px;
     font-size: medium;
-    text-transform: uppercase;
 }
 
 .button {
@@ -47,12 +45,12 @@ button, input, a {
     color: White;
     background-color: Black;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
 }
 
     .button:hover {
         background-color: Gray;
+        cursor:pointer;
     }
 
     .button:active {
@@ -61,6 +59,70 @@ button, input, a {
         border: 2px solid Black;
     }
 
+
+/* Dialog Styles */
+.dialog {
+    display:none;
+}
+
+.dialogContainer {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.6;
+    z-index:10;
+    left:0px;
+    top:0px;
+}
+
+.containerSection {
+    position:absolute;
+    height: 300px;
+    left:0px;
+    width:100%;
+    top:60%;
+    background-color: white;
+    margin-top:-300px;
+    z-index:12;
+}
+
+.dialogContent {
+    margin:0 auto;
+    width:800px;
+    height:100%;
+}
+
+.dialogTextContainer {
+    width:100%;
+    height:200px;
+    box-sizing:border-box;
+    padding-top:50px;
+    padding-left:50px;
+}
+
+.dialogOptionsContainer {
+    width:100%;
+    height:100px;
+}
+
+.dialogOption {
+    float:right;
+}
+
+/* End Dialog Styles */
+
+
+.contentWrapper {
+    width: 1024px;
+    height: 100%;
+    margin:0 auto;
+}
+
+.wideTable {
+    width: 95%;
+}
+
 .logo {
     float: left;
     font-size: xx-large;
@@ -68,6 +130,14 @@ button, input, a {
     display: inline-block;
     margin-top: 40px;
     color: #2C98EB;
+}
+
+.loading {
+    display: none;
+    width:40px;
+    position:absolute;
+    left:45%;
+    top:5%;
 }
 
 .topDiv {
@@ -91,140 +161,7 @@ button, input, a {
     color: Black;
 }
 
-.link:hover {
-    color: Black;
-}
-
-.link:active {
-    color: #4ca9f9;
-}
-
-.userHolder {
-    float: right;
-    width: 180px;
-    height: 100px;
-    margin-right: 1%;
-    margin-top: 1%;
-}
-
-.userText {
-    float: left;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.userTextOptions {
-    color: Gray;
-    float: left;
-    font-size: 15px;
-    margin-right: 40px;
-    margin-left: 5px;
-}
-
-.userAvatar {
-    float: right;
-    height: 70px;
-    box-shadow: 0 0 5px #888;
-}
-
-.wrapper {
-    width: 100%;
-}
-
-
-.textBoxTitle {
-    font-size: small;
-    color: black;
-=======
-﻿html {
-    margin: 0;
-    font-family: "Segoe UI Light","Segoe UI","Gudea";
-    background: gainsboro url('../Images/Masterpage/bg-main-tile.png') repeat-x 0 0;
-}
-
-body {
-    background: url(../Images/Masterpage/blurredBackground.png) no-repeat center;
-    height:900px;
-    overflow:hidden;
-}
-
-button, input, a {
-    font-size: 20px;
-    text-decoration: none;
-    color: Black;
-}
-
-.textbox {
-    background: Gray url(../Images/topfade.gif) repeat-x top;
-    border-style: none solid solid;
-    border: 1px solid #AAA;
-    padding: 4px;
-    color: #555;
-    width: 90%;
-    height: 30px;
-    font-size: medium;
-    text-transform: uppercase;
-}
-
-.dropdown {
-    border-style: none solid solid;
-    border: 1px solid #AAA;
-    padding: 4px;
-    color: #555;
-    width: 90%;
-    height: 30px;
-    font-size: medium;
-    text-transform: uppercase;
-}
-
-.button {
-    border: 2px solid White;
-    margin: 10px;
-    padding: 2px 24px;
-    color: White;
-    background-color: Black;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-    .button:hover {
-        background-color: Gray;
-    }
-
-    .button:active {
-        background-color: White;
-        color: Black;
-        border: 2px solid Black;
-    }
-
-.logo {
-    float: left;
-    font-size: xx-large;
-    margin-left: 27px;
-    display: inline-block;
-    margin-top: 40px;
-    color: #2C98EB;
-}
-
-.topDiv {
-    height: 80px;
-}
-
-.topMasterPageDiv {
-    width: 600px;
-    height: 100px;
-    margin-left: 20px;
-}
-
-.breadcrumb {
-    font-size: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: Gray;
-}
-
-.activeBreadCrumb {
+.activeSubBreadCrumb {
     color: Black;
 }
 
@@ -246,7 +183,7 @@ button, input, a {
 
 .userText {
     float: left;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -261,6 +198,8 @@ button, input, a {
 .userAvatar {
     float: right;
     height: 70px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px #888;
     box-shadow: 0 0 5px #888;
 }
 
@@ -272,5 +211,58 @@ button, input, a {
 .textBoxTitle {
     font-size: small;
     color: black;
->>>>>>> origin/master
 }
+
+/* Table */
+
+
+.content_table 
+{
+    width: 100%;
+    border-spacing: 0;
+    font-size:medium;
+}
+
+.content_table thead th {
+    height:10px;
+    font-size: small;
+    text-align:left;
+}
+
+
+.content_table thead td:hover {
+    background-color: #e1f3fb;
+    cursor:pointer;
+}
+
+.content_table tbody td {
+    height:30px;
+    padding-left:5px;
+    border-top: 2px solid white;
+    background-color: #71B1D1;
+    color:White;
+    cursor:pointer;
+}
+
+.content_table tbody tr:hover {
+    cursor:pointer;
+}
+
+.row_active {
+    background-color:#547a90 !important;
+    color:White;
+}
+
+.table_heading td {
+    border-bottom: 4px solid #c8c8c8;
+    border-right: 2px solid #c8c8c8;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    
+}
+
+#calendar .ui-datepicker-inline {
+    width: auto ! important
+}
+
+/**/

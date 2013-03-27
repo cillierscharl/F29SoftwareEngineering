@@ -6,7 +6,7 @@ fleet management- cloud based application to process and mManage various classes
 The 1stForRentals car fleet management solution empowers employees country wide to improve efficiencies and productivity
 by utilizing the latest technologies, increasing funtionaity and ease of use.
 
-![Home Page](http://i.imgur.com/YPxL6Sq.png)  
+![Home Page](http://i.imgur.com/C74JEFK.jpg)  
 
 ### Members: ###
 
